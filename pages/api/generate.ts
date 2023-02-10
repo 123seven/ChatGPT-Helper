@@ -1,5 +1,6 @@
 import type { NextRequest } from 'next/server';
 import { OpenAIStream, OpenAIStreamPayload } from '../../utils/OpenAIStream';
+import data from '../../public/prompts.json';
 
 if (!process.env.OPENAI_API_KEY) {
   throw new Error('Missing env var from OpenAI');
@@ -9,15 +10,7 @@ export const config = {
   runtime: 'edge',
 };
 
-const replyModeMap: any = {
-  聊天: '',
-  英语老师: 'I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. My first sentence is : ',
-  周报生成器: '请帮我把以下的工作内容填充为一篇完整的周报,以分点叙述的形式输出: ',
-  书籍讲解: '这本书主要讲述的是什么: ',
-  翻译英文: '翻译成中文: ',
-  翻译中文: '翻译成英文: ',
-  菜谱: '如何在家自制: ',
-};
+const replyModeMap: any = data
 
 const handler = async (req: NextRequest): Promise<Response> => {
   const { replyMode, text } = (await req.json()) as {
@@ -33,7 +26,7 @@ const handler = async (req: NextRequest): Promise<Response> => {
     return new Response('No prompt in the request', { status: 400 });
   }
 
-  const prompt = `${replyModeMap[replyMode]}${text}`;
+  const prompt = `${replyModeMap[replyMode]}：${text}`;
 
   console.log('prompt', prompt);
 

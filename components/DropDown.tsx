@@ -1,22 +1,17 @@
-import { Menu, Transition } from "@headlessui/react";
+import { Menu, Transition } from '@headlessui/react';
 import {
   CheckIcon,
   ChevronDownIcon,
   ChevronUpIcon,
-} from "@heroicons/react/20/solid";
-import { Fragment } from "react";
+} from '@heroicons/react/20/solid';
+import { Fragment } from 'react';
+import data from '../public/prompts.json';
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ');
 }
 
-const vibes = [
-  "聊天",
-  "英语老师",
-  "周报生成器",
-  "书籍内容讲解",
-  "菜谱",
-] as const;
+const vibes: any = Object.keys(data);
 
 export type VibeType = typeof vibes[number];
 
@@ -62,9 +57,9 @@ export default function DropDown({ vibe, setVibe }: DropDownProps) {
                   <button
                     onClick={() => setVibe(vibeItem)}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      vibe === vibeItem ? "bg-gray-200" : "",
-                      "px-4 py-2 text-sm w-full text-left flex items-center space-x-2 justify-between"
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      vibe === vibeItem ? 'bg-gray-200' : '',
+                      'px-4 py-2 text-sm w-full text-left flex items-center space-x-2 justify-between'
                     )}
                   >
                     <span>{vibeItem}</span>

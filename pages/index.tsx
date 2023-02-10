@@ -42,7 +42,6 @@ const Home: NextPage = () => {
     if (!response.ok) {
       throw new Error(response.statusText);
     }
-    console.log("123123")
     console.log(response)
     // This data is a ReadableStream
     const data = response.body;
