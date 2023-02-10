@@ -1,11 +1,5 @@
 # [chatgpt-helper](https://chat.aircode.dev)
 
-This project generates Helper for you using AI.
-
-![img](https://res.cloudinary.com/dxl1idlr5/image/upload/v1675322225/2023/02/d6ac6b1d3baaced408841f62fdfb4e5a.png)
-
-## Support
-`English`, `中文`, `日本語`, `Italiano`, `Deutsch`, `Español`, `Français`,`繁體中文`,`Nederlands` 
 
 PR welcome
 
@@ -34,5 +28,3 @@ npm run dev
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Thecosy/chatgpt-helper&env=OPENAI_API_KEY&project-name=chatgpt-helper&repo-name=chatgpthelper)
-
-<!-- https://www.seotraininglondon.org/gpt3-business-email-generator/ -->
