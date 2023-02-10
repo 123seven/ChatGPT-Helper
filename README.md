@@ -27,4 +27,4 @@ npm run dev
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Thecosy/chatgpt-helper&env=OPENAI_API_KEY&project-name=chatgpt-helper&repo-name=chatgpthelper)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/123seven/ChatGPT-Helper&env=OPENAI_API_KEY&project-name=chatgpt-helper&repo-name=chatgpthelper)
