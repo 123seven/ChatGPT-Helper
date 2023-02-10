@@ -11,7 +11,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-const vibes: any = Object.keys(data);
+const vibes: Array<string> = Object.keys(data);
 
 export type VibeType = typeof vibes[number];
 
