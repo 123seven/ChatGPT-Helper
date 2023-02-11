@@ -87,7 +87,18 @@ const Home: NextPage = () => {
         <h1 className="sm:text-3xl text-2xl max-w-1xl font-bold text-slate-900">
           ChatGPT 助手
         </h1>
-        {/* <p className="text-slate-500 mt-5">18,167 bios generated so far.</p> */}
+        <div className="text-slate-500 mt-5">
+          ⚠️由于OpenAI免费配额有限，有能力的同学可选择
+          <a
+            href="https://vercel.com/new/clone?repository-url=https://github.com/123seven/ChatGPT-Helper&env=OPENAI_API_KEY&project-name=chatgpt-helper&repo-name=chatgpthelper"
+            target="_blank"
+            rel="noreferrer"
+            className="font-bold hover:underline transition underline-offset-2 text-slate-900"
+          >
+            Vercel
+          </a>
+          一键部署自己的ChatGPT助手
+        </div>
         <div className="max-w-xl w-full">
           <div className="flex mt-4 items-center space-x-3 mb-3">
             <Image
