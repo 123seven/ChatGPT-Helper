@@ -99,6 +99,22 @@ const Home: NextPage = () => {
           </a>
           一键部署自己的ChatGPT助手
         </div>
+
+        <p className="text-slate-1000 mt-5 sm:text-2xl" >
+          此功能于2023-02-19 20:00:00暂时下线<br></br>
+        <br></br>
+        </p>
+        <p className="text-slate-1000 mt-5 " style={{textAlign: "left"}}>
+        1.为什么暂时下线？<br></br>
+        ①.由于此网站的使用人数过多，作者无力承担随之而来的运营成本。<br></br>
+        ②.产品存在合规风险，个人开发者无力应对审查机制。<br></br>
+        <br></br>
+        2.我迫切需要这个功能，你有什么办法能让我用上吗？<br></br>
+        想办法搞个ChatGPT账号自己问。<br></br>
+        <br></br>
+        还有什么想说想问的都可以通过邮箱steven.zhu.email@gmail.com联系我
+        </p>
+
         <div className="max-w-xl w-full">
           <div className="flex mt-4 items-center space-x-3 mb-3">
             <Image
@@ -130,8 +146,8 @@ const Home: NextPage = () => {
 
           {!loading && (
             <button
-              className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-4 mt-3 hover:bg-black/80 w-full"
-              onClick={(e) => generateDesc(e)}
+              disabled
+              className="bg-black/80 rounded-xl text-white font-medium px-4 py-2 sm:mt-4 mt-3 w-full"
             >
               生成回答 &rarr;
             </button>
