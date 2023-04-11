@@ -101,7 +101,14 @@ const Home: NextPage = () => {
         </div>
 
         <p className="text-slate-1000 mt-5 sm:text-2xl" >
-          此功能于2023-02-19 20:00:00暂时下线<br></br>
+          此功能于2023-02-19 20:00:00下线<br></br>
+
+          <p className="text-2xl mt-5">
+          请访问新网站<a className="text-blue-600"
+           href="https://smartchat.unknownbyte.com">
+          https://smartchat.unknownbyte.com
+          </a>
+          </p>
         <br></br>
         </p>
         <p className="text-slate-1000 mt-5 " style={{textAlign: "left"}}>
